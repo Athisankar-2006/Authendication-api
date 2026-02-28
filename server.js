@@ -1,0 +1,18 @@
+const express=require("express");
+
+
+const app=express();
+
+app.get("/",(req,res)=>{
+    res.send("hellow this is for check");
+    console.log("enjoy every moment");
+})
+
+
+
+
+const PORT=process.env.PORT || 5001;
+
+app.listen(PORT, ()=>{
+    console.log(`server runnig on port ${PORT}`)
+});
